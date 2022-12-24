@@ -33,7 +33,9 @@ export function TRPCProvider({ children }: TRPCProviderProps) {
       <QueryClientProvider client={queryClient}>
         <ReactQueryDevtools initialIsOpen={false} />
         <QueryErrorBoundary>
-          <Suspense fallback="Loading...">{children}</Suspense>
+          <Suspense fallback="Loading...">
+            {children}
+          </Suspense>
         </QueryErrorBoundary>
       </QueryClientProvider>
     </trpc.Provider>

@@ -23,6 +23,7 @@
     "format": "pnpm run lint:fix && pnpm run prettier"
   },
   "dependencies": {
+    "@auth0/auth0-react": "^1.12.0",
     "@tanstack/react-query": "^4.20.4",
     "@trpc/client": "^10.6.0",
     "@trpc/react-query": "^10.6.0",

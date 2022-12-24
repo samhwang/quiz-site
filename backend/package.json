@@ -9,7 +9,7 @@
     "format": "pnpm run lint:fix && pnpm run prettier && prisma format",
     "typecheck": "tsc",
     "wrangler:dev": "cd .. && wrangler pages dev client/dist",
-    "dev": "pnpm run prisma:generate && pnpm run wrangler:dev",
+    "dev": "pnpm run prisma:generate && dotenv -- pnpm run wrangler:dev",
     "prisma:migrate": "dotenv -- bash -c 'DATABASE_URL=${MIGRATE_DATABASE_URL} prisma migrate dev'",
     "prisma:migrate:deploy": "dotenv -- bash -c 'DATABASE_URL=${MIGRATE_DATABASE_URL} prisma migrate deploy'",
     "prisma:generate": "prisma generate"

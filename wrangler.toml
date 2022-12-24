@@ -1,0 +1,2 @@
+[vars]
+DATABASE_URL = "prisma://aws-us-east-1.prisma-data.com/?api_key=SaXHb_RVwCvpQQQzFFWTHjfWWaollRpqbGO2pRV3ZxVaBdlVOa7koji9E1-vaKx_"
